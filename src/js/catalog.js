@@ -99,7 +99,7 @@
         filteredBooks.forEach(book => {
           const li = document.createElement('div');
           // li.textContent = `${book.title} by ${book.author}`;
-          li.innerHTML=`<article class="swiper-item card">
+          li.innerHTML=`<article class="swiper-item card" style="margin-top:40%; margin-bottom:20%">
           <!-- Image Source -->
                   <img class="card-image"src="${book.image}" height="400rem" width="50rem">
                 

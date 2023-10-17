@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .about_sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,5 +413,9 @@ h4 {
 .footbar_contactus-link:hover {
   color: #dfba18;
   font-size: 40px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*# sourceMappingURL=about.css.map */

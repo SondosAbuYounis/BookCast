@@ -56,7 +56,7 @@ $bgContact: #D9D9D9;
     $shelfOnemarginLeftB2: 36%;
     $shelfOnemarginLeftB3: 33%;
     // font sizes
-    $b2Heading: 150%;
+    $b2Heading: 100%;
 // Colours Palette
 
 $navBg: #0f294e;
@@ -195,8 +195,18 @@ $white: white;
 
 // Contact Us styling 
     $contactUs: #9EA4BA;
+    .navbar_container{
+      margin-bottom: 40%;
+      }
+      .footbar_contactus{
+          margin-top: 40%;
+      }
 
+      * {
 
+        font-family: $font;
+      }
+      
 body{
     background-color: $categoryBgColor;
     position: relative;
@@ -1241,3 +1251,6 @@ body{
 }
 
 
+*{
+  font-family: $font;
+}

@@ -115,6 +115,11 @@ $white: white;
 
 
 
+    * {
+
+      font-family: $font;
+    }
+    
 .cat-row{
   display: flex;
   margin-left: 4% ;
@@ -655,6 +660,7 @@ opacity: 0;
   .card-image {
       border-radius: 1%;
       width: 100%;
+      height: 50vh;
       overflow: hidden;
   }
   // BOOK NAme
@@ -851,4 +857,3 @@ opacity: 0;
         gap: 20px;
     }
   }
-  

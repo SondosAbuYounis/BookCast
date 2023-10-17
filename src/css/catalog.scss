@@ -76,6 +76,11 @@ $white: white;
     $contactUs: #9EA4BA;
 
 
+    * {
+
+        font-family: $font;
+      }
+      
 // Title HR
 .catalog_title{
     margin-top: 15%;
@@ -111,7 +116,12 @@ $white: white;
 //     width: 1fr;
 //     height: 5fr;
 // }
-
+.navbar_container{
+margin-bottom: 20%;
+}
+.footbar_contactus{
+    margin-top: 20%;
+}
 // Nav bar styling 
 .navbar_container{
     background-color: $navBg;
@@ -123,6 +133,7 @@ $white: white;
     width: 100%;
     z-index: 99;
     box-shadow: 0 0 15px;
+    margin-bottom: 20%;
 }
 .navbar_container-sec1 {
     display: flex;
@@ -239,80 +250,127 @@ color: $hoverBorder;
     flex-direction: column;
     box-shadow: 0 0 10px;
     position: relative;
-}
-.footbar_container{
+  }
+  .footbar_container{
     display: flex;
     flex-direction: row;
     
-}
-.footbar_container ul {
+  }
+  .footbar_container ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-}
-.footbar_container-logo{
+  }
+  .footbar_container-logo{
     color: $white;
     font-size: $logoSz;
     font-weight: bold;
-}
-.footbar_container li {
-display: inline;
-}
-
-.footbar_container a {
-text-decoration: none;
-font-size: $navSecSZ;
-margin-left: 100px;
-}
-
-.footbar_container .item {
-text-decoration: none;
-color: $white;
-font-weight: lighter;
-}
-
-.footbar_container .item:hover {
-color: $NavhoverTxt;
-}
-.footbar_container-copyRight {
-text-align: center;
-font-family: $font;
-color: $white;
-font-size: 12px;
-background-color: $navBg;
-margin: 0;
-margin-top: 1%;
-padding-top: 6%;
-}
-.footbar_container-copyRight p{
-padding: 0.3%;
-}
-// Footer - Contact Us
-.footbar_contactus{
-height: 50px;
-background-color: $contactUs;
-position: absolute;
-bottom: 280px;
-z-index: 0;
-width: 90%;
-right: 5%;
-border-radius: 90px 90px 0 0 ;
-text-align: center; 
-padding-top: 2%;
-padding-bottom: 2%;
-}
-.footbar_contactus-link{
+  }
+  .footbar_container li {
+  display: inline;
+  }
+  
+  .footbar_container a {
+  text-decoration: none;
+  font-size: $navSecSZ;
+  margin-left: 100px;
+  }
+  
+  .footbar_container .item {
+  text-decoration: none;
+  color: $white;
+  font-weight: lighter;
+  }
+  
+  .footbar_container .item:hover {
+  color: $NavhoverTxt;
+  }
+  .footbar_container-copyRight {
+  text-align: center;
+  font-family: $font;
+  color: $white;
+  font-size: 12px;
+  background-color: $navBg;
+  margin: 0;
+  margin-top: 1%;
+  padding-top: 6%;
+  }
+  .footbar_container-copyRight p{
+  padding: 0.3%;
+  }
+  // Footer - Contact Us
+  .footbar_contactus{
+  height: 85px;
+  background-color: $contactUs;
+  position: absolute;
+  bottom: 250px;
+  z-index: 0;
+  width: 90%;
+  right: 5%;
+  border-radius: 90px 90px 0 0 ;
+  text-align: center; 
+  padding-top: 2%;
+  padding-bottom: 2%;
+  }
+  .footbar_contactus-link{
     text-decoration: none;
     text-align: center;
     font-family: $font;
     color: $white;
     font-size: 30px;
-}
-.footbar_contactus-link:hover{
+  }
+  .footbar_contactus-link:hover{
     color: $hoverBorder;
     font-size:40px;
-}
-
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .footbar_ {
+        height: auto;
+        padding: 20px;
+       
+    }
+  
+    .footbar_container {
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    .footbar_container ul {
+        padding: 10px;
+    }
+  
+    .footbar_container-logo {
+        font-size: 24px;
+    }
+  
+    .footbar_container a {
+        font-size: 16px;
+        margin-left: 0;
+    }
+  
+    .footbar_container-copyRight {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+  
+    .footbar_contactus {
+      position: absolute;
+      bottom: 260px;
+      z-index: -1;
+      width: 70%;
+      right: 15%;
+    }
+    .footbar_contactus-link{
+      font-size: 15px;
+    }
+    .footbar_contactus-link:hover{
+      font-size:20px;
+    }
+    
+  }
+  
 
 
 
@@ -572,3 +630,6 @@ padding-bottom: 2%;
         gap: 20px;
     }
   }
+  *{
+    font-family: $font;
+}

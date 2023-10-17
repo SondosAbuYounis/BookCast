@@ -16,8 +16,8 @@
     <div class="hamburger"></div>
     <!-- Burger list items START -->
     <ul class="navbar_burgerList-items">
-        <li><a class="item" href="src/html/contact.html">Request a book</a></li>
-        <li><a class="item" href="index.html">Home</a></li>
+        <li><a class="item" href="/src/html/contact.html">Request a book</a></li>
+        <li><a class="item" href="/index.html">Home</a></li>
         <li><a class="item" href="src/html/category.html">Categories</a></li>
         <li><a class="item" href="src/html/about.html">About Us</a></li>
         <li class="searchBarNav">
@@ -41,7 +41,7 @@
     </ul>
     <hr />
     <ul class="navbar_container-sec2">
-        <li><a class="item" href="index.html">Home</a></li>
+        <li><a class="item" href="/index.html">Home</a></li>
         <li><a class="item" href="src/html/category.html">Categories</a></li>
         <li><a class="item" href="src/html/about.html">About Us</a></li>
     </ul>
@@ -52,15 +52,16 @@
 <section class="shelves">
 
     <ul class="shelves_shelf1">
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book1" ><h2>Signature</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book2" ><h2>Signature</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book3" ><h2>Signature</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book4" ><h2>Signature</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book5" ><h2>Signature</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book6" ><h2>Coming Soon</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book7" ><h2>Coming Soon</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book8" ><h2>Coming Soon</h2></div></a>
-        <a href="../html/catalog.html"><div class="shelves_shelf1-book9" ><h2>Coming Soon</h2></div></a>
+        <div class="shelves_shelf1-book1"id="cat-button0" ><h2 >Fiction</h2></div>
+        <a ><div class="shelves_shelf1-book2" ><h2 id="cat-button1">Horror</h2></div></a>
+        <a ><div class="shelves_shelf1-book3" ><h2 id="cat-button2">Philosophy</h2></div></a>
+        <a ><div class="shelves_shelf1-book4" ><h2 id="cat-button3">Classics</h2></div></a>
+        <a ><div class="shelves_shelf1-book5" ><h2 id="cat-button4">Dystopian</h2></div></a>
+        <a ><div class="shelves_shelf1-book6" ><h2>Soon</h2></div></a>
+        <a ><div class="shelves_shelf1-book7" ><h2>Soon</h2></div></a>
+        <a ><div class="shelves_shelf1-book8" ><h2>Soon</h2></div></a>
+        <a ><div class="shelves_shelf1-book9" ><h2>Soon</h2></div></a>
+        
     </ul>
     <!-- <div class="shelves_shelf2">
         <a href="/src/html/catalog.html"><div class="shelves_shelf1-book1" ><h2>Signature</h2></div></a>
@@ -97,9 +98,36 @@
     </footer>
     <div class="footbar_container-copyRight"><hr><p>credits for bookstore &#169; 2023</p> </div>    
 </section>
-
 <!-- Java Script -->
-<script src="/src/js/category.js"></script>
+<script >
+    function searchCategory(i) {
+    sessionStorage.clear();
+    const category = document.getElementById(`cat-button${i}`).value.toLowerCase();
+    sessionStorage.setItem('category', category);
+    window.location.href = "src/html/catalog.html";
+  }
+  
+  document.getElementById('cat-button0').addEventListener('click', function () {
+    searchCategory('0');
+  });
+  
+  document.getElementById('cat-button1').addEventListener('click', function () {
+    searchCategory('1');
+  });
+  
+  document.getElementById('cat-button2').addEventListener('click', function () {
+    searchCategory('2');
+  });
+  
+  document.getElementById('cat-button3').addEventListener('click', function () {
+    searchCategory('3');
+  });
+  
+  document.getElementById('cat-button4').addEventListener('click', function () {
+    searchCategory('4');
+  });
+
+</script>
 
 </body>
 </html>

@@ -176,6 +176,21 @@
     signupHeader.addEventListener("click", () => {
       wrapper.classList.remove("active");
     });
+    function checkSessionStorage() {
+      const userEmail = sessionStorage.getItem('userEmail');
+
+      if (userEmail) {
+        // إذا وجدنا عنوان بريد إلكتروني في Session Storage، قم بإخفاء زر الدخول/التسجيل
+        document.getElementById("navbar_container-profile").style.display = "block";
+        document.getElementById("navbar_container-signinup").style.display = "none";
+      } else {
+        // إذا لم نجد عنوان بريد إلكتروني في Session Storage، قم بإظهار زر الدخول/التسجيل
+        document.getElementById("navbar_container-signinup").style.display = "block";
+      }
+    }
+
+    // قم بتنفيذ الدالة عند تحميل الصفحة
+    window.addEventListener("load", checkSessionStorage);
   </script>
 </body>
 

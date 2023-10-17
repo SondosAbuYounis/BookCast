@@ -482,7 +482,7 @@ function render2() {
               
               <div>
                   <div style="display: flex;flex-direction: row;">
-                      <p class="font-weight-bold" style="margin-left: 10px;">  ${product.username} </p> 
+                      <p class="font-weight-bold" style="margin-left: 10px;"> User </p> 
                       <div style="margin-left: 10px;">
                           <span class="fa fa-star checked"></span>
 <span class="fa fa-star "></span>
@@ -532,7 +532,7 @@ function render2() {
                 
                 <div>
                     <div style="display: flex;flex-direction: row;">
-                        <p class="font-weight-bold" style="margin-left: 10px;">  ${product.username}  </p> 
+                        <p class="font-weight-bold" style="margin-left: 10px;"> User </p> 
                         <div style="margin-left: 10px;">
                             <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
@@ -580,7 +580,7 @@ function render2() {
                 
                 <div>
                     <div style="display: flex;flex-direction: row;">
-                        <p class="font-weight-bold" style="margin-left: 10px;">  ${product.username}  </p> 
+                        <p class="font-weight-bold" style="margin-left: 10px;"> User  </p> 
                         <div style="margin-left: 10px;">
                             <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
@@ -627,7 +627,7 @@ function render2() {
                 
                 <div>
                     <div style="display: flex;flex-direction: row;">
-                        <p class="font-weight-bold" style="margin-left: 10px;">  ${product.username}  </p> 
+                        <p class="font-weight-bold" style="margin-left: 10px;"> User  </p> 
                         <div style="margin-left: 10px;">
                             <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
@@ -675,7 +675,7 @@ function render2() {
                 
                 <div>
                     <div style="display: flex;flex-direction: row;">
-                        <p class="font-weight-bold" style="margin-left: 10px;">  ${product.username}  </p> 
+                        <p class="font-weight-bold" style="margin-left: 10px;">User  </p> 
                         <div style="margin-left: 10px;">
                             <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
@@ -722,7 +722,7 @@ function render2() {
                 
                 <div>
                     <div style="display: flex;flex-direction: row;">
-                        <p class="font-weight-bold" style="margin-left: 10px;">  ${product.username}  </p> 
+                        <p class="font-weight-bold" style="margin-left: 10px;"> User </p> 
                         <div style="margin-left: 10px;">
                             <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>

@@ -115,6 +115,11 @@ $white: white;
 
 
 
+    * {
+  
+      font-family: $font;
+    }
+    
 .cat-row{
   display: flex;
   margin-left: 4% ;
@@ -1539,7 +1544,107 @@ align-items: center;
 *{
   font-family: $font;
 }
+.hero_description2{
+  display: none;
+ }
+ 
+// responsoveness HERO SECTION
+@media screen and (min-width: 749px) and (max-width: 1125px) {
+  .hero_description{
+    transform: scale(0.8);
+  }
+  #searchQueryInput{
+    transform: translateY(160%);
+  }
+  #searchQuerySubmit{
+    transform: translateY(160%);
+  }
+}
+@media screen and (max-width: 749px) and (min-width:500) {
+  .hero_description{
+    transform: scale(0.7);
+  }
+  #searchQueryInput{
+    transform: translateY(200%);
+  }
+  #searchQuerySubmit{
+    transform: translateY(200%);
+  }
+}
+@media screen and (max-width: 749px) {
+  .hero_description{
+    display: none;
+  }
+  .mkt-3dSlider{
+    display: block;
+    margin-bottom: 5%;
+  }
+  .hero_description2{
+    display:block;
+    flex: 1;
+    position: relative;
+    transform: translatey(25%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: scale(0.5);
 
+  }
+    .card-slider {
+      width: 15%;
+      height: 100%;
+    }
+    .slider{
+      transform: scale(0.5);
+  }
+  #searchQueryInput{
+    transform: translateY(180%);
+  }
+  #searchQuerySubmit{
+    transform: translateY(180%);
+  }
+}
+// Responsive REview section 
+@media screen and (min-width:797px) and (max-width:1125px) {
+  .feedback_sec{
+    transform: scale(0.8);
+  }
+  .feedback_sec-prt3-card2{
+    display: none;
+    position: absolute;
+    top: -40%; left: 35%;
+    width: 30%;
+    animation: slideInRes2 2s forwards;
+  }
+  .feedback_sec-prt3-card3{
+    display: none;
 
+    position: absolute;
+    top:10%; left: 35%;
+    width: 30%;
+    animation: slideInRes3 3s forwards;
+  }
+  .feedback_sec-prt3-card1{
+    position: absolute;
+    top: -40%; left: 35%;
+    width: 30%;
+    animation: slideIn 1s forwards;
+  }
+}
+
+@keyframes slideInRes2 {
+  from {
+      opacity: 1; 
+      transform: translateX(0); 
+      transform: translatey(-120%);
+  }
+}
+@keyframes slideInRes3 {
+  from {
+      opacity: 1; 
+      transform: translateX(0); 
+      transform: translatey(-180%);
+  }
+}
 
 

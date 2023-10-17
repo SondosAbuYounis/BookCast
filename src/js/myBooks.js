@@ -1,9 +1,9 @@
 var data = sessionStorage.getItem("userId");
 
-if (data == null) {
+if (data !== null) {
     function render() {
         // Your rendering logic goes here
-    }
+    
 
     fetch("http://localhost:3000/list")
         .then(response => response.json())
@@ -13,24 +13,24 @@ if (data == null) {
                 fetch(`http://localhost:3000/mydata/${item.bookid}`)
                     .then(response => response.json())
                     .then(data => {
-                        let card = document.getElementById("cat");
+                        let card = document.getElementById("card-slader");
 
-                        // Create a new div element for each card
+                        
                         let newCard = document.createElement('article');
                         newCard.classList.add('swiper-item','card'); 
                         newCard.innerHTML = `
-                        <img class="card-image"src="${product.image}"  id="${product.id}" onclick="re(this)">
+                        <img class="card-image"src="${data.image}"  id="${data.id}" onclick="re(this)">
                         </img>
                         <div class="card-header">
-                            <a href="#">${product.title}</a><br><br>
-                            <button class="icon-button" id="${product.id}" onclick="addlist(this)">
+                            <a href="#">${data.title}</a><br><br>
+                            <button class="icon-button" id="${data.id}" onclick="addlist(this)">
                   
                                 <svg style="color: #0f294e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18,2H6A1,1,0,0,0,5,3V21a1,1,0,0,0,1.65.76L12,17.27l5.29,4.44A1,1,0,0,0,18,22a.84.84,0,0,0,.38-.08A1,1,0,0,0,19,21V3A1,1,0,0,0,18,2ZM17,18.86,12.64,15.2a1,1,0,0,0-1.28,0L7,18.86V4H17Z" fill="blue"></path></svg>
                     
                             </button>
                         </div>
                         <div class="card-footer">
-                            <p>Author: ${product.author}</p>
+                            <p>Author: ${data.author}</p>
                   
                             <fieldset class="rating">
                                 <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
@@ -53,6 +53,17 @@ if (data == null) {
                     });
             });
         });
+    }
+       
+        render()
 } else {
     alert("You are not registered yet");
 }
+function rd(e) {
+    let id=e.id
+    localStorage.clear();
+    localStorage.setItem("id",id);
+    window.location.assign("../Html/details.html");
+    
+}
+

@@ -17,6 +17,11 @@ $bgContact: #D9D9D9;
     $mainTxtCl: #0F2C59;
     $secondaryTxtCl: grey;
 
+    * {
+
+      font-family: $font;
+    }
+    
     body, html {
         height: 100%;
         margin: 0;
@@ -194,3 +199,6 @@ $bgContact: #D9D9D9;
   margin-left: 32%;
 
  }
+ *{
+  font-family: $font;
+}

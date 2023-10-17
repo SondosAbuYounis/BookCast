@@ -43,6 +43,11 @@ $btnTxtCl: #0f294e;
     $logoSz : 150%;
     $navSecSZ : 120%;
 
+    * {
+
+      font-family: $font;
+    }
+    
 
     body {
         margin: 0;
@@ -574,3 +579,6 @@ color: $hoverBorder;
       width: 100%;
     }
   }
+  *{
+    font-family: $font;
+}
